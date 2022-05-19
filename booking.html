@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Your Package</title>
+        <link rel = "icon" href = "images/favicon.ico" type="x-icon">
+        <link rel="stylesheet" href="booking.css">
+        
+    </head>
+    <body>
+       <div class="booking-form-box">
+           <div class="booking-form">
+           <form action="book.php" method="POST">
+            <div class="radio-btn">
+                <h3>Your Package<br></h3>
+                <input type="radio" class="btn" name="c_check" value = "Golden Triangle Tour" >
+                <span>Golden Triangle Tour</span>
+                <input type="radio" class="btn" name="c_check" value = "Splendor of Kashmir">
+                <span>Splendor of Kashmir</span>
+            </div>
+ 
+                <div class="input-group">
+                <label><br>DEPARTURE<br></label>
+                <input type="date" class="form-control select-date" name = "dept">
+                </div>
+
+                <div class="input-group">
+                <label>TOTAL MEMBERS<br></label>
+                <input type="number" class="form-control" value="1" name = "total">
+                </div>
+
+                <div class="input-grp">
+                <h3 class="pay">Payment Details<br></h3>
+                <label>CARD HOLDER*<br></label>
+                <input type="text" class="form-control" placeholder="Enter name" name = "cname">
+                </div>
+
+                <div class="input-grp">
+                <label>CARD NUMBER*<br></label>
+                <input type="number" class="form-control" placeholder="Enter card number" name = "cnum"> 
+                </div>
+
+                <div class="input-grp">
+                <label>EXPIRY DATE*<br></label>
+                <label>Month</label>
+                <select class="custom-select" name = "month">
+                    <option value="1">01</option>
+                    <option value="1">02</option>
+                    <option value="1">03</option>
+                    <option value="1">04</option>
+                    <option value="1">05</option>
+                    <option value="1">06</option>
+                    <option value="1">07</option>
+                    <option value="1">08</option>
+                    <option value="1">09</option>
+                    <option value="1">10</option>
+                    <option value="1">11</option>
+                    <option value="1">12</option>
+                </select>
+                </div>
+
+                <div class="input-grp">
+                    <label>Year</label>
+                    <input type="number" class="year" placeholder="yy" name ="year">
+                    </div>
+
+                <div class="input-grp">
+                 <label>EMAIL*</label>
+                  <input type="email" class="form-control" placeholder="Enter email" name = "mail">
+                  </div>
+
+                  <div class="input-grp">
+                    <label>CVV*</label>
+                     <input type="password" class="form-control" placeholder="Enter CVV" name = "cvv">
+                     </div>
+
+                     <div class="input-grp">
+                     <button type="submit" class="btn btn-primary book">Book Package</button>
+                     </div>
+                     </form>
+                     
+       </div>
+    </body>
+</html>

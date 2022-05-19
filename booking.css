@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/book.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.booking-form-box
+{
+    max-width: 450px;
+    border: 2px solid #dee4e3;
+    margin: 2.5% auto 0;
+    background-color: rgba(74, 74, 78, 0.4);
+}
+.radio-btn .btn
+{
+    margin: 0 20px;
+}
+.radio-btn .btn
+{
+    margin: 10px 5px 20px 9;
+    box-shadow: none;
+}
+.radio-btn h3
+{
+    font-size: 20px;
+    color:rgb(248, 242, 242);
+}
+.radio-btn .btn::after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    top: -2px;
+    left: -1px;
+    background-color: rgb(241, 222, 222);
+    position: relative;
+    display: inline-block;
+    border: 3px solid #fff;
+    visibility: visible;
+    border-radius: 50%;
+}
+
+.radio-btn .btn:checked::after{
+    content: "";
+    background-color: rgb(54, 35, 35);
+    transition: 0.3s;
+}
+.radio-btn span
+{
+    color: #fff;
+    margin-right: 5px;
+    font-size: 16px;
+}
+.booking-form
+{
+    padding: 10px 20px 20px;
+}
+.booking-form label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+input::placeholder{
+    color:  #fff !important;
+}
+.form-control{
+    width:125px;
+    height:35px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 0.1px solid rgb(236, 229, 229);
+}
+.year{
+    width: 100px;
+    height:35px;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    color: white;
+
+}
+.custom-select{
+    background-color: transparent!important;
+    color: white!important;
+    margin-top: 10px!important;
+    height: 30px!important;
+}
+.custom-select option{
+    color:black;
+}
+.input-grp
+{
+    width: 151px;
+    display: inline-block;
+}
+.pay{
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size: 21px;
+    text-shadow: 0.5px 0.5px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+.form-control
+{
+    font-size: 14px!important;
+    border-radius: 0!important;
+    color: #fff!important;
+    background: transparent!important;
+    box-shadow: none!important;
+    padding-left:10px;
+}
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.select-date::-webkit-calendar-picker-indicator
+{
+    color: rgba(0, 0, 0, 0.4)!important;
+    background-color: transparent;
+}
+.book{
+    width: 100%;
+    padding: 12px;
+    margin-left:120px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: 1px solid white!important;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.book:hover{
+    background: rgb(216, 206, 206,0.4)!important;
+    color: rgb(39, 37, 37)!important;
+    transition: 0.5s ease-in-out;
+    transform: translateX(-1px) translateY(1px);
+}
